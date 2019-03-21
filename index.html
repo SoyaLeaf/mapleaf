@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>米小饭的官网</title>
+  <style media="screen">
+    h1{
+      text-align:center;
+      margin-top:50px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="loading">Loading...</h1>
+</body>
+<script type="text/javascript">
+  var i = 0;
+  setInterval(function() {
+    var text = "Loading";
+    i++;
+    for (var j = 0; j < i % 4; j++) {
+      text += '.';
+    }
+    document.querySelector("#loading").innerText = text;
+  }, 500);
+</script>
+
+</html>
